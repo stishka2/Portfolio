@@ -1,0 +1,49 @@
+
+@media (max-width: 74.9375em) {
+   
+    h1 {
+        font-size: 8rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    button {
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .burger-menu .fa-bars {
+        display: unset;
+        margin: 2rem;
+        
+        
+    }
+
+    header {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        
+        top: 0;
+        
+    }
+
+    nav {
+        display: none;
+    }
+    
+   
+
+
+}
