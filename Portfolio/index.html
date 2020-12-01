@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/mediaQueries.css">
     
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./favicon.ico">
 
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
 
@@ -22,15 +22,15 @@
       <header >
 
         
-        <div id="menu" class="burger-menu center">
-          <a onclick="showMenu()" href="#"><i class="fas fa-bars"></i></a>
+        <div id="menu" class="burger-menu">
+          <a onclick="showMenu()" href="javascript:void(0)"><i class="fas fa-bars"></i></a>
         </div>
-        <nav id="nav">
-          <button onclick="mode()">Dark mode</button>
+        <nav id="nav" class="active">
+          <button class="btn_dark" onclick="mode()">Dark mode</button>
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a> </li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a onclick="hideMenu()" href="#about">About</a></li>
+            <li><a onclick="hideMenu()" href="#work">Work</a> </li>
+            <li><a onclick="hideMenu()" href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -59,15 +59,15 @@
         <div class="skill-row center">
           <img class="" src="" alt="">
           <h3>Tools, programming languages, and frameworks</h3>
-          <p id="p">
-            HTML <br>
-            CSS <br>
-            Bootstrap <br>
-            JavaScript <br>
-            Git and GitHub <br>
-
-
-          </p>
+          <div class="skill_list">
+            
+            <i class="fab fa-html5"></i> HTML <br>
+            <i class="fab fa-css3-alt"></i> CSS <br>
+            <i class="fab fa-bootstrap"></i> Bootstrap <br>
+            <i class="fab fa-js-square"></i> JavaScript <br>
+            <i class="fab fa-github"></i> Git and GitHub <br>
+  
+          </div>
         </div>
 
         <div class="skill-row center">
@@ -75,19 +75,23 @@
           <h3>Soft skills</h3>
           <p id="p">Problem solving, time management, team work. </p>
         </div>
-        <button class="">Download resume</button>
+        <button class="btn_resume">Download resume</button>
       </div>
 
       <hr>
 
       <div id="work" class="center">
         <h2>Projects I worked on</h2>
-        <h3>One dollar future telling</h3>
-        <p id="p"> It's a text adventure game, written as a student project.</p>
-        <img class="image1" src="images/screenshot1.png" alt="screenshot">
-        <div class="git">
-          <button ><a href="https://github.com/stishka2/text_adventure_game"><i class="fab fa-github"></i> Code</a></button>
-      </div>
+        <h3>Urzamuds future telling</h3>
+        <div class="row">
+          <a href="https://stishka2.github.io/Urzamuds-fortune-telling/"><img class="text_game" src="https://image.thum.io/get/https://stishka2.github.io/Urzamuds-fortune-telling/" alt="text game"> </a>
+          
+          <div class="git center">
+            <p id="p"> It's a text adventure game, written as a student project.</p>
+            <button class="btn_code"><a href="https://github.com/stishka2/text_adventure_game"><i class="fab fa-github"></i> Code</a></button>
+          </div>
+
+        </div>
 
 
       </div>
@@ -107,7 +111,7 @@
         <a class="footer-link" href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i> LinkedIn</a>
         <a class="footer-link" href="https://twitter.com/"><i class="fab fa-github"></i> GitHub</a>
       </div>
-      <p>© 2018 Kristina Stiskaite.</p>
+      <span>© 2018 Kristina Stiskaite.</span>
     </div>
 
     

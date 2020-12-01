@@ -61,10 +61,26 @@ function mode() {
 
 function showMenu() {
     const links = document.getElementById("nav");
-    if(links.style.display == "flex"){
-        links.style.display = "none";
-    }
-    else {
-        links.style.display = "flex";
-    }
+    // const leftCloud = document.getElementById("leftCloud");
+    // const rightCloud = document.getElementById("rightCloud");
+    // if(links.style.left == "0px"){
+    //     links.style.left = "-100%";
+    //     leftCloud.style.display = "block";
+    //     rightCloud.style.display = "block";
+        
+    // }
+    // else {
+    //     links.style.left = "0px";
+    //     leftCloud.style.display = "none";
+    //     rightCloud.style.display = "none";
+        
+    // }
+
+    links.classList.toggle("active");
+}
+
+function hideMenu() {
+    const links = document.getElementById("nav");
+
+    links.classList.remove("active");
 }
