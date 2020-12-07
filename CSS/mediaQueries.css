@@ -27,7 +27,7 @@
         flex-direction: column;
         align-items: center;
         top: 3.5rem;
-        background-color: rgba(238, 238, 238, 0.226);
+        background-color: #e4f9f5a6;
         backdrop-filter: blur(7px);
         z-index: +100;
         transition: 0.3s; 
@@ -58,4 +58,15 @@
         width: 5rem;
     }
     
+    .profile {
+        width: unset;
+    }
+
+    .skill-row {
+        width: unset;
+    }
+
+    .projects {
+        width: unset;
+    }
 };
